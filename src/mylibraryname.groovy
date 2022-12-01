@@ -1,6 +1,14 @@
-#!/usr/bin/env groovy
+package my.domain
 
-def call(String name = 'human') {
-  echo "Hello, ${name}."
+class Tester
+{
+    public static String staticTest()
+    {
+        return "this is from a static method";
+    }
+
+    public String test()
+    {
+        return "this is from an instance method";
+    }
 }
-
